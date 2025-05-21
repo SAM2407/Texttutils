@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysing your text</title>
+</head>
+<body>
+    <style>
+            body {
+background: linear-gradient(to right, #40efe6, #3ceaad,#16ee70);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1 {
+    text-align: center;
+    color: rgb(16, 16, 17);
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    #textContainer {
+        height: 180px;
+        font-size: 14px;
+    }
+
+    #box {
+        padding: 15px;
+    }
+
+    #box label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+    </style>
+    <h1>Your analyis text -{{purpose}}</h1>
+    <p>
+        {{analysed_text}}
+    </p>
+</body>
+</html>

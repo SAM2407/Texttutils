@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemlatesCheckingforDjango</title>
+</head>
+<body>
+    <style>
+        body {
+background: linear-gradient(to right, #40efe6, #3ceaad,#16ee70);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(16, 16, 17);
+    margin-top: 30px;
+}
+
+#textContainer {
+    background-color: rgb(254, 203, 236);
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    height: 250px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #0a61e3;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(51, 132, 252, 0.1);
+    resize: vertical;
+}
+
+#box {
+    background-color: #89bfec;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #f41111;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#box input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#box label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #000000fc;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #111111;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #f7f32d;
+}
+@media (max-width: 600px) {
+    #textContainer {
+        height: 180px;
+        font-size: 14px;
+    }
+
+    #box {
+        padding: 15px;
+    }
+
+    #box label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+
+
+    </style>
+
+   <h1> Enter the text for analying it</h1>
+   <form action="/Analyser" method="get" class="container">
+    <textarea name="text" id="textContainer"></textarea><br>
+    <div id="box">
+    <input type="checkbox" name="removepunc">Remove punctuation<br>
+    <input type="checkbox" name="fullcaps">UPPERCASE</br>
+    <input type="checkbox" name="lowercase">lowercase</br>
+    <input type="checkbox" name="newlineRemover">NewLineRemover</br>
+    <input type="checkbox" name="allspaceremover">allspaceremover</br>
+    <input type="checkbox" name="spaceremover">spaceremover</br>
+    <input type="checkbox" name="charcounter">charcounter</br>
+    <input type="checkbox" name="wordcounter">wordcounter</br>
+    </div>
+    <button type="submit">Analysis it!</button>
+   </form>
+   
+</body>
+</html>
